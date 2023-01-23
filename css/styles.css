@@ -1,8 +1,70 @@
-li{ 
+/* li{ 
      color : red;
 
 }
 
 li{
     color: purple;
+} */
+
+/* a class and id allows CSS to effect certain elements
+class allows to change behavior of multiple elements
+an instance allows you to change only one element  */
+
+/* CSS syntax for a class */
+
+.relative {
+    position: relative;
+    /* takes up x% of the space */
+    width: 75%;
+    height: 300px;
+    padding:5px;
+    margin-bottom: 12px;
+    border: 2px solid #000;
 }
+
+
+.absolute {
+   /* defualt position, doesn't change  */
+        /* position: static; */
+
+
+
+/* from the orginal positin, move 30 pixals ... how position changes from static */
+        /* position : relative;
+        border: 2pz soild #000;
+        left: 30px; */
+
+/* position is fixed to the browser
+describing how much space we want around initial-value */
+            /* position: fixed;
+            border: 2px soild #000;
+            bottom : 14px;
+            right : 14px;
+            width: 300px; */
+
+position: absolute;
+top: 80px;
+right: 0;
+/* takes up x% of space within the box it resides */
+width: 80%;
+height: 100px;
+padding-top: 12px 0px 0px 12px;
+border: 2px solid #000;
+
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: greenyellow;
+    border: 2px solid green;
+    margin-bottom: 12px;
+
+}
+
+/* CSS syntax for ID */
+/* #secondPara {
+
+} */
