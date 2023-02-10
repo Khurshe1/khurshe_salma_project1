@@ -1,0 +1,23 @@
+/* div {
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+  }
+*/
+/*
+  .rotated {
+    transform: rotate(45deg);
+    background-color: pink;
+  }  
+
+  */
+  
+  .one {
+    display:block; 
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #6d5271;
+    transform: rotate(45deg);
+}
