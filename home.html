@@ -12,11 +12,39 @@
     <!-- <div>Normal</div>
     <div class="rotated">Rotated</div> -->
 
+    <!-- <marquee direction="right" >
+        <div>
+            <a class="one" href="index.html" ></a>
+            <a href="index.html" ></a>
+        </div>    
 
-    <div>
-        <a class="one" href="index.html" ></a>
-    </div>
-        
+    </marquee> -->
+
+
+<marquee
+  direction="down"
+  behavior="alternate">
+  <marquee behavior="alternate"> 
+    <div id = "one">
+        <p>
+            <a class="one" href="index.html" ></a>
+            <a href="index.html" ></a>
+        </p>
+    </div>    
+ </marquee>
+</marquee>
+
+<script>
+    var random= document.createElement('random');
+    var container=document.getElementById('one');
+    var width = Math.floor(Math.random() * 200) + 100;
+    var height = Math.floor(Math.random() * 200) + 100;
+    random. setAttribute ('width', width +'px');
+    random.setAttribute('height', height + 'px');
+    random.appendChild(random);
+
+
+</script>
     
     
 </body>
