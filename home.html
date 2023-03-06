@@ -9,43 +9,61 @@
 </head>
 <body>
 
-    <!-- <div>Normal</div>
-    <div class="rotated">Rotated</div> -->
-
-    <!-- <marquee direction="right" >
-        <div>
-            <a class="one" href="index.html" ></a>
-            <a href="index.html" ></a>
-        </div>    
-
-    </marquee> -->
-
-
-<marquee
+<!-- <marquee
   direction="down"
   behavior="alternate">
   <marquee behavior="alternate"> 
-    <div id = "one">
+    <div id = "red">
         <p>
-            <a class="one" href="index.html" ></a>
+            <a class="red" href="index.html" ></a>
             <a href="index.html" ></a>
         </p>
     </div>    
  </marquee>
 </marquee>
 
+
+<marquee
+  direction="down"
+  behavior="alternate">
+  <marquee behavior="alternate"> 
+    <div id = "blue">
+        <p>
+            <a class="blue" href="index.html" ></a>
+            <a href="index.html" ></a>
+        </p>
+    </div>    
+ </marquee>
+</marquee>  -->
+
+<!-- <body>
+  <marquee behavior="alternate">
+    <div id="red">
+      <a class="red" href="index.html"></a>
+      <a href="index.html"></a>
+    </div>
+  </marquee>
+  <marquee behavior="alternate">
+    <div id="blue">
+      <a class="blue" href="index.html"></a>
+      <a href="index.html"></a>
+    </div>
+  </marquee>
+</body> -->
+
+<!-- <div class="shape red" style="border-width: {borderWidth}px; top: {topPosition}px; left: {leftPosition}px;" data-animation-type="{animationType}"></div>
+<div class="shape blue" style="border-width: {borderWidth}px; top: {topPosition}px; left: {leftPosition}px;" data-animation-type="{animationType}"></div> -->
 <script>
-    var random= document.createElement('random');
-    var container=document.getElementById('one');
-    var width = Math.floor(Math.random() * 200) + 100;
-    var height = Math.floor(Math.random() * 200) + 100;
-    random. setAttribute ('width', width +'px');
-    random.setAttribute('height', height + 'px');
-    random.appendChild(random);
-
-
+  const shapes = document.querySelectorAll('.shape');
+  shapes.forEach(shape => {
+    const animationType = shape.dataset.animationType;
+    if (animationType === 'move-vertical') {
+      shape.classList.add('move-vertical');
+    } else if (animationType === 'move-diagonal') {
+      shape.classList.add('move-diagonal');
+    }
+  });
 </script>
-    
-    
+
 </body>
 </html>
