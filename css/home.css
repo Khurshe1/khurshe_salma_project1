@@ -1,90 +1,114 @@
-/*   
-  .one {
-  display:block; 
-  width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #6d5271;
-  transform: rotate(45deg); */
-/* 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #600528;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-  .one {
-    display:block; 
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid #6d5271;
-    border-color: 50px solid #6d5271;
-  } */
-
-
-    
-  /* .red {
-
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 160px solid #ff0000;
-    border-color: 60px solid #ff0000;
-    top: 50%;
-    left: 20%;
-    position: absolute;
-  }
-  
-  .blue {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 160px solid #0000ff;
-    border-color: 60px solid #0000ff;
-    top: 30%;
-    left: 70%;
-    position: absolute;
-  }
-   */
-   
-   .shape {
-    position: absolute;
-    width: 0;
-    height: 0;
-    display: block;
-    }
-    
-    .red {
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 80px solid #ff0000;
-    top: 0;
-    left: 25%;
-    }
-    
-    .blue {
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 80px solid #0000ff;
-    top: 0;
-    left: 75%;
-    }
-    
-    .move-vertical {
-    animation: moveVertical 5s linear infinite alternate;
-    }
-    
-    .move-diagonal {
-    animation: moveDiagonal 7s linear infinite alternate;
-    }
-    
-    @keyframes moveVertical {
-    from { top: 0; }
-    to { top: 100vh; }
-    }
-    
-    @keyframes moveDiagonal {
-    from { top: 0; left: 75%; }
-    to { top: 100vh; left: 25%; }
-    }
-  
+      .shape {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+      }
+      
+      .shape1 {
+        animation: move1 3s forwards;
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid #FEBD54;
+        transform: translateX(0) translateY(0px);
+      }
+      
+      .shape2 {
+        animation: move2 3s ease-in-out forwards;
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid #FEBD54;
+        transform: translateX(0) translateY(60px);
+      }
+      
+      .shape3 {
+        animation: move3 3s ease-in-out forwards;
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid #FEBD54;
+        transform: translateX(0) translateY(120px);
+      }
+      
+      #shape1-text {
+        position: absolute;
+        left: 60px;
+        top: 10px;
+        color: #FFF;
+        text-decoration: none;
+      }
+      
+      #shape2-text {
+        position: absolute;
+        left: 60px;
+        top: 70px;
+        color: #FFF;
+        text-decoration: none;
+      }
+      
+      #shape3-text {
+        position: absolute;
+        left: 60px;
+        top: 130px;
+        color: #FFF;
+        text-decoration: none;
+      }
+      
+      @keyframes move1 {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        50% {
+          transform: translateX(10vw) translateY(0);
+        }
+        100% {
+          transform: translateX(10vw) translateY(0);
+        }
+      }
+      
+      @keyframes move2 {
+        0% {
+          transform: translateX(0) translateY(60px);
+        }
+        50% {
+          transform: translateX(10vw) translateY(60px);
+        }
+        100% {
+          transform: translateX(10vw) translateY(60px);
+        }
+      }
+      
+      @keyframes move3 {
+        0% {
+          transform: translateX(0) translateY(120px);
+        }
+        50% {
+          transform: translateX(10vw) translateY(120px);
+        }
+        100% {
+          transform: translateX(10vw) translateY(120px);
+        }
+      }

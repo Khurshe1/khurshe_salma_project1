@@ -9,61 +9,43 @@
 </head>
 <body>
 
-<!-- <marquee
-  direction="down"
-  behavior="alternate">
-  <marquee behavior="alternate"> 
-    <div id = "red">
-        <p>
-            <a class="red" href="index.html" ></a>
-            <a href="index.html" ></a>
-        </p>
-    </div>    
- </marquee>
-</marquee>
+  <div class="shape shape1"></div>
+  <div class="shape shape2"></div>
+  <div class="shape shape3"></div>
 
-
-<marquee
-  direction="down"
-  behavior="alternate">
-  <marquee behavior="alternate"> 
-    <div id = "blue">
-        <p>
-            <a class="blue" href="index.html" ></a>
-            <a href="index.html" ></a>
-        </p>
-    </div>    
- </marquee>
-</marquee>  -->
-
-<!-- <body>
-  <marquee behavior="alternate">
-    <div id="red">
-      <a class="red" href="index.html"></a>
-      <a href="index.html"></a>
-    </div>
-  </marquee>
-  <marquee behavior="alternate">
-    <div id="blue">
-      <a class="blue" href="index.html"></a>
-      <a href="index.html"></a>
-    </div>
-  </marquee>
-</body> -->
-
-<!-- <div class="shape red" style="border-width: {borderWidth}px; top: {topPosition}px; left: {leftPosition}px;" data-animation-type="{animationType}"></div>
-<div class="shape blue" style="border-width: {borderWidth}px; top: {topPosition}px; left: {leftPosition}px;" data-animation-type="{animationType}"></div> -->
-<script>
-  const shapes = document.querySelectorAll('.shape');
-  shapes.forEach(shape => {
-    const animationType = shape.dataset.animationType;
-    if (animationType === 'move-vertical') {
-      shape.classList.add('move-vertical');
-    } else if (animationType === 'move-diagonal') {
-      shape.classList.add('move-diagonal');
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
     }
-  });
-</script>
+    .container {
+      height: 100%;
+      width: 100%;
+      background-color: #600528;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./img/background.jpg" alt="Background image">
+  </div>
 
-</body>
+    </style>
+  </head>
+  <body>
+    <a href="./weeklys/weeklys.html" id="shape1-text">Weeklys</a>
+    <a href="exercises.html" id="shape2-text">Exercises</a>
+    <a href="artwork.html" id="shape3-text">Artwork</a>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+  </body>
 </html>
